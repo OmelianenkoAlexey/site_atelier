@@ -1,0 +1,75 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+
+.header-menu {
+    background-color: red;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 13px;
+        padding-bottom: 13px;
+
+    &__logo {
+
+        &-link {
+           
+
+        }
+
+        &-image {}
+    }
+
+
+
+    &__navbar {
+   
+    }
+
+    &__list {
+        // делает не списком
+          @include unlist;
+     display: flex;
+     gap: 20px;
+
+    }
+
+    &__item {
+           
+    }
+
+    &__link {
+         color: #ACA592;
+
+         
+          
+    }
+
+    &__button {
+        margin-left: auto;
+       
+        // background-color: #fff;
+        border: 2px solid #FFAE2B;
+        display: flex;
+
+    }
+
+    &__button-link {
+        display: block;
+        
+            padding: 0.5em 1em;
+            // на кнопки при наведении стрелка меняется на пальчик
+        
+            cursor: pointer;
+            text-align: center;
+ min-width: 147px;
+        height: 52px;
+
+    }
+
+
+
+
+
+}
