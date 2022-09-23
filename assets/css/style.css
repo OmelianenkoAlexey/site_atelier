@@ -264,11 +264,15 @@ a {
 
 .header {
   min-height: 100vh;
-
-  background-color: #181511;
 }
 
 .header-menu {
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  background-color: #181511;
+}
+.header-menu__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,12 +280,7 @@ a {
   align-items: center;
   -ms-flex-align: center;
 
-  padding-top: 13px;
-  padding-bottom: 13px;
-
-  background-color: red;
-
-  gap: 20px;
+  gap: 40px;
 }
 .header-menu__list {
   display: -webkit-box;
@@ -293,12 +292,20 @@ a {
 
   list-style: none;
 
-  gap: 20px;
+  gap: 40px;
 }
 .header-menu__link {
+  text-transform: uppercase;
+
   color: #aca592;
+
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
 }
-.header-menu__button {
+.header-menu__action {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,7 +314,7 @@ a {
 
   border: 2px solid #ffae2b;
 }
-.header-menu__button-link {
+.header-menu__button {
   display: block;
 
   min-width: 147px;
@@ -316,6 +323,97 @@ a {
 
   cursor: pointer;
   text-align: center;
+}
+
+.activ {
+  color: #ffae2b;
+}
+
+.header-content {
+  padding-bottom: 120px;
+}
+
+.header-content__bg {
+  min-width: 100vw;
+}
+
+.header-content__bg-image {
+  position: absolute;
+  z-index: -1;
+
+  display: block;
+
+  width: 100%;
+}
+
+.header-content__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.header-content__title {
+  max-width: 869px;
+
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #ffffff;
+
+  font-family: "Old Standard TT";
+  font-size: 70px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 80px;
+}
+
+.header-content__description {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+
+  padding-top: 120px;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #ffae2b;
+
+  font-family: "Old Standard TT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.header-content__button-link {
+  display: block;
+
+  min-width: 143px;
+  height: 50px;
+  padding: 0.5em 1em;
+
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #181511;
+  border: none;
+  background-color: #ffae2b;
+
+  font-family: "Old Standard TT";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
 }
 
 .software {

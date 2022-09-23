@@ -4,72 +4,76 @@
 
 
 .header-menu {
-    background-color: red;
-    display: flex;
-    gap: 20px;
-    align-items: center;
+    background-color: #181511;
+    // background-color: red;
+    
     padding-top: 13px;
-        padding-bottom: 13px;
+    padding-bottom: 13px;
+
+    &__container {
+        display: flex;
+    gap: 40px;
+    align-items: center;
+    }
 
     &__logo {
 
-        &-link {
-           
-
-        }
+        &-link {}
 
         &-image {}
     }
 
 
 
-    &__navbar {
-   
-    }
+    &__navbar {}
 
     &__list {
         // делает не списком
-          @include unlist;
-     display: flex;
-     gap: 20px;
+        @include unlist;
+        display: flex;
+        gap: 40px;
 
     }
 
-    &__item {
-           
-    }
+    &__item {}
 
     &__link {
-         color: #ACA592;
 
-         
-          
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #ACA592;
+
+
+
+
+
     }
 
-    &__button {
+    &__action {
         margin-left: auto;
-       
+
         // background-color: #fff;
         border: 2px solid #FFAE2B;
         display: flex;
 
     }
 
-    &__button-link {
+    &__button {
         display: block;
-        
-            padding: 0.5em 1em;
-            // на кнопки при наведении стрелка меняется на пальчик
-        
-            cursor: pointer;
-            text-align: center;
- min-width: 147px;
+        padding: 0.5em 1em;
+        // на кнопки при наведении стрелка меняется на пальчик
+        cursor: pointer;
+        text-align: center;
+        min-width: 147px;
         height: 52px;
-
     }
 
+}
 
-
-
-
+.activ {
+    color: #FFAE2B;
 }
