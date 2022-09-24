@@ -1,0 +1,76 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.template {
+  background-color: $color-bg-primary;
+  border: none;
+  padding-bottom: 120px;
+}
+
+.template-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {}
+
+.template__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFAE2B;
+}
+
+.template__description {
+  order: -1;
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ACA592;
+}
+
+.template-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.template-box__item {
+  height: 315px;
+  max-width: 387px;
+  border: 2px solid #4b4136;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.template-box__item-title {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.template-box__item-picture {
+  order: -1;
+}
+
+.template-box__item-image {}

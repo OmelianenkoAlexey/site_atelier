@@ -20,7 +20,7 @@
 .header-content__bg-image {
     display: block;
     width: 100%;
-    min-height: 600px;
+   height: 600px;
     // !обязательное свойство
     // !отрезает стороны изображения, сохраняет соотношение сторон
     object-fit: cover;

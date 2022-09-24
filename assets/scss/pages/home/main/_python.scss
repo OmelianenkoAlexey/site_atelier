@@ -1,0 +1,13 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.python__picture {
+width: 100vw;
+}
+
+.python__image {
+    display: block;
+    height: 460px;
+    width: 100%;
+    object-fit: cover;
+}
