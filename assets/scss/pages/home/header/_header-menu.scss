@@ -14,7 +14,12 @@
 
     &__logo {
 
-        &-link {}
+        &-link {
+&:hover {
+    // увеличивает при наведении
+        transform: scale(1.1);
+}
+        }
 
         &-image {}
     }
@@ -57,8 +62,11 @@
         text-align: center;
         min-width: 147px;
         height: 52px;
+        // замедляет эффект
+            transition: 0.5s;
+
         &:hover {
-            box-shadow: 0 0 15px red;
+            box-shadow: 0 0 20px red;
         }
     }
 }

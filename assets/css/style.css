@@ -260,6 +260,11 @@ a:hover {
 
   gap: 40px;
 }
+.header-menu__logo-link:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
 .header-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,11 +309,14 @@ a:hover {
   padding: 0.5em 1em;
 
   cursor: pointer;
+  -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
   text-align: center;
 }
 .header-menu__button:hover {
-  -webkit-box-shadow: 0 0 15px red;
-          box-shadow: 0 0 15px red;
+  -webkit-box-shadow: 0 0 20px red;
+          box-shadow: 0 0 20px red;
 }
 
 .activ {
@@ -414,6 +422,9 @@ a:hover {
   padding: 0.5em 1em;
 
   cursor: pointer;
+  -webkit-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
   text-align: center;
   text-transform: uppercase;
 
@@ -428,8 +439,8 @@ a:hover {
   line-height: 22px;
 }
 .header-content__button:hover {
-  -webkit-box-shadow: 0 0 15px red;
-          box-shadow: 0 0 15px red;
+  -webkit-box-shadow: 0 0 20px red;
+          box-shadow: 0 0 20px red;
 }
 
 .template {
