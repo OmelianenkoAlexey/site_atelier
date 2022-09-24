@@ -3,41 +3,44 @@
 
 
 .header-content {
-// background-color: #181511;
-// position: relative;
-// z-index: -1;
-padding-bottom: 120px;
+   
+       padding-bottom: 100px;
+//  background-color: red;
 }
-
-
 
 .header-content__bg {
 
-    min-width: 100vw;
-//  background-color: #8e8a7f;
-    
-// background-image: url(../../../../img/header-bg.png);
-// background-size: cover;
 
+min-width: 100vw;
+    display: flex;
 
+    align-content: center;
+        align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
 }
 
 .header-content__bg-image {
+
     display: block;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
+width: 100%;
+min-height: 600px;
+// !обязательное свойство
+    object-fit: cover;
 }
 
 .header-content__text {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
+ margin-top: auto;
+ padding-top: 100px;
 }
 
 .header-content__title {
     max-width: 869px;
-font-family: 'Old Standard TT';
+    font-family: 'Old Standard TT';
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
@@ -49,42 +52,38 @@ font-family: 'Old Standard TT';
 
 .header-content__description {
     order: -1;
-       padding-top: 120px;
-font-family: 'Old Standard TT';
+    font-family: 'Old Standard TT';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 22px;
-
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-
     color: #FFAE2B;
-
-
 }
+
+.header-content__action {}
 
 .header-content__button {
-
-}
-
-.header-content__button-link {
     display: block;
-min-width: 143px;
-height: 50px;
-padding: 0.5em 1em;
-cursor: pointer;
-background-color: #ffae2b;
-border: none;
+    min-width: 143px;
+    height: 50px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #ffae2b;
+    border: none;
 
     font-family: 'Old Standard TT';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #181511;
-}
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181511;
 
+    &:hover {
+            box-shadow: 0 0 15px red;
+        }
+}

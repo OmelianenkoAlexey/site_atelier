@@ -7,14 +7,17 @@
   // ставим блоки друг под другом
   // flex-direction: column;
   // *высота блока header на весь экран
-  min-height: 100vh;
-  // background-color: $color-white;
-  
-    // position: relative;
-    // z-index: -2;
+  // min-height: 100vh;
+// display: block;
 }
 
 
 .header-container {
 
 }
+
+a:hover {
+      background-color: #ffae2b;
+}
+
+

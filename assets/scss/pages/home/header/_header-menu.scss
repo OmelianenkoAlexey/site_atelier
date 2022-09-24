@@ -1,19 +1,15 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
-
 .header-menu {
     background-color: #181511;
-    // background-color: red;
-    
     padding-top: 13px;
     padding-bottom: 13px;
 
     &__container {
         display: flex;
-    gap: 40px;
-    align-items: center;
+        gap: 40px;
+        align-items: center;
     }
 
     &__logo {
@@ -23,22 +19,19 @@
         &-image {}
     }
 
-
-
     &__navbar {}
 
     &__list {
         // делает не списком
         @include unlist;
         display: flex;
+        flex-wrap: wrap;
         gap: 40px;
-
     }
 
     &__item {}
 
     &__link {
-
         font-family: 'Old Standard TT';
         font-style: normal;
         font-weight: 400;
@@ -46,20 +39,14 @@
         line-height: 24px;
         text-transform: uppercase;
         color: #ACA592;
-
-
-
-
-
+          padding: 5px 10px;
     }
 
     &__action {
+      
         margin-left: auto;
-
-        // background-color: #fff;
         border: 2px solid #FFAE2B;
         display: flex;
-
     }
 
     &__button {
@@ -70,8 +57,10 @@
         text-align: center;
         min-width: 147px;
         height: 52px;
+        &:hover {
+            box-shadow: 0 0 15px red;
+        }
     }
-
 }
 
 .activ {
