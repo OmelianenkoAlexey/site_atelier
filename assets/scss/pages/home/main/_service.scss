@@ -46,7 +46,16 @@ padding-bottom: 120px;
         flex-wrap: wrap;
         justify-content: center;
 
+&__link {
 
+    &:hover {
+        // background-color: none;
+        //     // тень при наведении
+            box-shadow: 0 0 7px $color-accent-orange;
+            // увеличивает при наведении
+            transform: scale(1.1);
+    }
+}
 
         &__item {
             height: 350px;

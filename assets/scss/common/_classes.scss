@@ -25,6 +25,10 @@
       transform: scale(1.1);
     }
 
+        .service-box__link:hover {
+          box-shadow: 0 0 7px $color-accent-orange;
+        }
+
 // .btn {
 //   display: block;
 //   padding: 0.5em 1em;
