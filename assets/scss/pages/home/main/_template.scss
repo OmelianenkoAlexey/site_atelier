@@ -45,6 +45,12 @@
   gap: 20px;
   justify-content: space-around;
 }
+.template-box__item-link {
+display: block;
+flex-basis: 300px;
+  flex-grow: 1;
+
+}
 
 .template-box__item {
   height: 315px;
@@ -54,9 +60,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 300px;
-  flex-grow: 1;
+  
 }
+
 
 .template-box__item-title {
   font-family: 'Old Standard TT';
