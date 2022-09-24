@@ -262,6 +262,21 @@ a {
           box-shadow: 0 0 7px #ff6336;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  min-height: 80vh;
+
+  border: none;
+  background-color: #181511;
+}
+
 a:hover {
   background-color: #ffae2b;
 }
@@ -338,12 +353,18 @@ a:hover {
 }
 
 .header-content {
-  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-bottom: 100px;
 }
 
 .header-content__bg {
-  position: absolute;
-  z-index: -1;
+  position: relative;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,6 +392,9 @@ a:hover {
 }
 
 .header-content__text {
+  position: absolute;
+  z-index: 2;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,106 +469,97 @@ a:hover {
           box-shadow: 0 0 15px red;
 }
 
-.software {
-  background-color: #dabc98;
+.template {
+  border: none;
+  background-color: #181511;
 }
 
-.software-container {
+.template-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-
-  padding-top: 70px;
-  padding-bottom: 70px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
-.software-contant {
+.template__title {
+  margin: 0;
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  color: #ffae2b;
+
+  font-family: "Old Standard TT";
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 70px;
+}
+
+.template__description {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #aca592;
+
+  font-family: "Old Standard TT";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.template-box {
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.template-box__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
   -ms-flex-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 
-  gap: 67px;
+  width: 387px;
+  height: 315px;
+
+  border: 2px solid red;
 }
 
-.software-contant__title {
-  color: #000000;
+.template-box__item-title {
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 50px;
+  color: #ffffff;
+
+  font-family: "Old Standard TT";
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 23px;
 }
 
-.software-contant__picture {
+.template-box__item-picture {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
-}
-
-.software-contant__image {
-  max-width: 176px;
-}
-
-.software-picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-
-  gap: 70px;
-}
-
-.software-picture__image {
-  max-width: 128px;
-}
-
-.bg {
-  width: 100vw;
-  min-height: 300px;
-
-  background-image: url(../../../../img/team.png);
-}
-
-@media (min-width: 1200px) {
-  .software-contant__title {
-    padding-right: 125px;
-  }
-  .software-picture {
-    padding-left: 70px;
-
-    border-left: 1px solid black;
-  }
-}
-
-@media (max-width: 1199.8px) {
-  .software-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  .software-contant__title {
-    text-align: center;
-  }
-}
-
-@media (max-width: 991.8px) {
-  .software-contant {
-    gap: 20px;
-  }
-}
-
-@media (max-width: 767.8px) {
-  .software-contant {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
 }

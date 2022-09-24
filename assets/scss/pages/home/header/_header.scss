@@ -2,13 +2,17 @@
 @use "../../../mixins" as *;
 
 .header {
+// position: relative;
+// z-index: -2;
+    background-color: $color-bg-primary;
   // св-во привязано к высоте экрана
-  // display: flex;
+  display: flex;
   // ставим блоки друг под другом
-  // flex-direction: column;
+  flex-direction: column;
   // *высота блока header на весь экран
-  // min-height: 100vh;
+  min-height: 80vh;
 // display: block;
+border: none;
 }
 
 

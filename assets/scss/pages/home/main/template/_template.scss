@@ -1,0 +1,72 @@
+@use "../../../../presets" as *;
+@use "../../../../mixins" as *;
+
+.template {
+  background-color: $color-bg-primary;
+  border: none;
+}
+
+.template-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {}
+
+.template__title {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFAE2B;
+}
+
+.template__description {
+  order: -1;
+  font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ACA592;
+}
+
+.template-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.template-box__item {
+  height: 315px;
+  width: 387px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+      justify-content: center;
+        align-items: center;
+}
+
+.template-box__item-title {
+  font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.template-box__item-picture {
+  order: -1;
+}
+
+.template-box__item-image {}
