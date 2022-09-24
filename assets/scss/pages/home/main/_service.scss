@@ -1,0 +1,114 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.service {
+    background-color: $color-bg-primary;
+
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 70px;
+        /* identical to box height, or 117% */
+
+        text-align: center;
+
+        color: #FFAE2B;
+    }
+
+    &__description {
+        order: -1;
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px;
+        /* identical to box height, or 183% */
+
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        color: #ACA592;
+    }
+
+    &-box {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+        &__item {
+            height: 350px;
+            max-width: 400px;
+            padding: 60px;
+  position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            border: 2px solid #4b4136;
+            flex-basis: 300px;
+            flex-grow: 1;
+            &--md {
+              
+                top: 10px;
+            }
+
+            &--md2 {
+ top: 20px;
+            } 
+
+            &-title {
+                font-family: 'Old Standard TT';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 29px;
+                line-height: 40px;
+                color: #FFAE2B;
+            }
+
+            &-pictire {
+                order: -1;
+            }
+
+            &-image {}
+
+            &-description {
+                font-family: 'Old Standard TT';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 26px;
+                color: #ACA592;
+            }
+
+            &-notes {
+                font-family: 'Old Standard TT';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 26px;
+                color: #ACA592;
+            }
+
+        }
+
+
+    }
+}
+
+.service-box__item--md {
+
+}
