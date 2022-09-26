@@ -287,6 +287,9 @@ a {
   font-style: normal;
   line-height: 24px;
 }
+.header-menu__link:hover {
+  color: #ffae2b;
+}
 .header-menu__action {
   display: -webkit-box;
   display: -ms-flexbox;
