@@ -941,6 +941,9 @@ a {
 
   text-align: center;
 }
+.footer-content__title--md {
+  color: #ffae2b;
+}
 .footer-content__social {
   display: -webkit-box;
   display: -ms-flexbox;
