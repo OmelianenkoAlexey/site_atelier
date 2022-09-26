@@ -109,8 +109,18 @@
     }
 
     &__button {
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFAE2B;
         display: block;
-        padding: 0.5em 1em;
+        // padding: 0.7em 1em;
+        background-color: $color-bg-primary;
+        box-shadow: none;
         // на кнопки при наведении стрелка меняется на пальчик
         cursor: pointer;
         text-align: center;
@@ -118,6 +128,11 @@
         height: 52px;
         // замедляет эффект
         transition: 0.5s;
+
+        @include sm {
+            min-width: 110px;
+            height: 30px;
+        }
 
 
         &:hover {
