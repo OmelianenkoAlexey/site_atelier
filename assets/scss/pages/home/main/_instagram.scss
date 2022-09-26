@@ -12,7 +12,13 @@ padding-bottom: 120px;
 
     &-item {}
 
-    &-image {}
+    &-image {
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
     &-logo {}
 
