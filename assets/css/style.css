@@ -221,16 +221,6 @@ a {
           transition: 0.5s;
 }
 
-a:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-
-  background-color: #ffae2b;
-  -webkit-box-shadow: 0 0 7px #ff6336;
-          box-shadow: 0 0 7px #ff6336;
-}
-
 .service-box__link:hover {
   -webkit-box-shadow: 0 0 7px #ff6336;
           box-shadow: 0 0 7px #ff6336;
@@ -266,6 +256,9 @@ a:hover {
   -ms-flex-align: center;
 
   gap: 40px;
+}
+.header-menu__logo {
+  padding: 5px 5px;
 }
 .header-menu__list {
   display: -webkit-box;
@@ -312,13 +305,10 @@ a:hover {
        -o-transition: 0.5s;
           transition: 0.5s;
   text-align: center;
-  text-align: center;
   text-transform: uppercase;
 
   color: #ffae2b;
   background-color: #181511;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 
   font-family: "Old Standard TT";
   font-size: 11px;

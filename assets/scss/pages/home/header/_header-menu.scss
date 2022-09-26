@@ -16,8 +16,10 @@
     }
 
     &__logo {
+            padding: 5px 5px;
 
         &-link {
+        
             // &:hover {
             //     // увеличивает при наведении
             //     transform: scale(1.1);
@@ -109,6 +111,7 @@
     }
 
     &__button {
+         display: block;
         font-family: 'Old Standard TT';
         font-style: normal;
         font-weight: 400;
@@ -117,13 +120,10 @@
         text-align: center;
         text-transform: uppercase;
         color: #FFAE2B;
-        display: block;
-        // padding: 0.7em 1em;
         background-color: $color-bg-primary;
-        box-shadow: none;
+      
         // на кнопки при наведении стрелка меняется на пальчик
         cursor: pointer;
-        text-align: center;
         min-width: 147px;
         height: 52px;
         // замедляет эффект
