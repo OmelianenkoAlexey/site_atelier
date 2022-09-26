@@ -776,6 +776,9 @@ a:hover {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.instagram-item {
+  margin-bottom: 10px;
+}
 .instagram-image {
   -webkit-transition: 0.5s;
        -o-transition: 0.5s;
@@ -807,6 +810,8 @@ a:hover {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+
+  margin-bottom: 10px;
 }
 .instagram-name__image {
   position: absolute;
@@ -1042,7 +1047,7 @@ a:hover {
 
     display: none;
 
-    height: 40vh;
+    height: 50vh;
     padding-top: 20px;
 
     border-radius: 0 0 12px 12px;
