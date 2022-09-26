@@ -17,13 +17,13 @@
       transition: 0.5s;
     }
   
-    // a:hover {
-    //   background-color: #ffae2b;
-    //   // тень при наведении
-    //   box-shadow: 0 0 7px $color-accent-orange;
-    //   // увеличивает при наведении
-    //   transform: scale(1.1);
-    // }
+    a:hover {
+      background-color: #ffae2b;
+      // тень при наведении
+      box-shadow: 0 0 7px $color-accent-orange;
+      // увеличивает при наведении
+      transform: scale(1.1);
+    }
 
         .service-box__link:hover {
           box-shadow: 0 0 7px $color-accent-orange;

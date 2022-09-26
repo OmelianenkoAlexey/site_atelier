@@ -221,6 +221,16 @@ a {
           transition: 0.5s;
 }
 
+a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+
+  background-color: #ffae2b;
+  -webkit-box-shadow: 0 0 7px #ff6336;
+          box-shadow: 0 0 7px #ff6336;
+}
+
 .service-box__link:hover {
   -webkit-box-shadow: 0 0 7px #ff6336;
           box-shadow: 0 0 7px #ff6336;
@@ -257,11 +267,6 @@ a {
 
   gap: 40px;
 }
-.header-menu__logo-link:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
 .header-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,9 +293,6 @@ a {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
-}
-.header-menu__link:hover {
-  color: #ffae2b;
 }
 .header-menu__action {
   display: -webkit-box;
@@ -1033,6 +1035,7 @@ a {
   }
   .header-menu__list {
     position: absolute;
+    z-index: 3;
     top: 100%;
     right: 0;
     left: 0;
