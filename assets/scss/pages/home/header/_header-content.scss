@@ -20,7 +20,7 @@
 .header-content__bg-image {
     display: block;
     width: 100%;
-   height: 600px;
+    height: 600px;
     // !обязательное свойство
     // !отрезает стороны изображения, сохраняет соотношение сторон
     object-fit: cover;
@@ -46,6 +46,18 @@
     text-align: center;
     letter-spacing: 1px;
     color: #FFFFFF;
+
+    @include lg {
+        font-size: 60px;
+    }
+
+    @include md {
+        font-size: 50px;
+    }
+
+    @include sm {
+        font-size: 40px;
+    }
 
 }
 
@@ -82,7 +94,7 @@
     text-transform: uppercase;
     color: #181511;
     // замедляет эффект
-        transition: 0.5s;
+    transition: 0.5s;
 
     &:hover {
         box-shadow: 0 0 20px red;

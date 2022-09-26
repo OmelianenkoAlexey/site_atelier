@@ -24,6 +24,18 @@
   line-height: 70px;
   text-align: center;
   color: #FFAE2B;
+
+  @include lg {
+      font-size: 50px;
+    }
+  
+    @include md {
+      font-size: 45px;
+    }
+  
+    @include sm {
+      font-size: 40px;
+    }
 }
 
 .template__description {
@@ -40,15 +52,30 @@
 }
 
 .template-box {
-  display: flex;
-  flex-wrap: wrap;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  //   justify-content: space-around;
+  display: grid;
+  justify-items: center;
   gap: 20px;
-  justify-content: space-around;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include xl {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include md {
+    grid-template-columns: 1fr;
+  }
+
+
 }
+
 .template-box__item-link {
-display: block;
-flex-basis: 300px;
-  flex-grow: 1;
+  display: block;
+  // flex-basis: 300px;
+  // flex-grow: 1;
 
 }
 
@@ -60,7 +87,7 @@ flex-basis: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
