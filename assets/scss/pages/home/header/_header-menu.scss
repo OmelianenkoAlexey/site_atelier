@@ -2,9 +2,12 @@
 @use "../../../mixins" as *;
 
 .header-menu {
+    position: relative;
     background-color: $color-bg-primary;
     padding-top: 13px;
     padding-bottom: 13px;
+
+
 
     &__container {
         display: flex;
@@ -13,18 +16,27 @@
     }
 
     &__logo {
-
+   
         &-link {
-&:hover {
-    // увеличивает при наведении
-        transform: scale(1.1);
-}
+            &:hover {
+                // увеличивает при наведении
+                transform: scale(1.1);
+            }
         }
 
         &-image {}
     }
 
-    &__navbar {}
+    &__navbar {
+
+        @include lg-min {
+            margin-right: auto;
+        }
+
+        @include lg {
+            order: 1;
+        }
+    }
 
     &__list {
         // делает не списком
@@ -32,9 +44,31 @@
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
+
+        @include lg {
+            position: absolute;
+            left: 0;
+            top: 100%;
+            right: 0;
+            height: 30vh;
+            border-radius: 0 0 12px 12px;
+            background: #FFAE2B;
+            display: none;
+            padding-top: 20px;
+        }
     }
 
-    &__item {}
+    &__item {
+
+        @include lg {
+margin-right: 20px;
+    margin-bottom: 11px;
+    margin-left: 20px;
+    padding: 8px;
+    border-radius: 12px;
+    background: $color-bg-primary;
+        }
+    }
 
     &__link {
         font-family: 'Old Standard TT';
@@ -44,14 +78,29 @@
         line-height: 24px;
         text-transform: uppercase;
         color: #ACA592;
-          padding: 5px 10px;
+        padding: 5px 10px;
+
+
+        @include lg {
+padding: 0.5em 0;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+
+        }
     }
 
     &__action {
-      
-        margin-left: auto;
         border: 2px solid #FFAE2B;
         display: flex;
+
+        @include lg {
+             margin-left: auto; 
+        }
+      
     }
 
     &__button {
@@ -63,7 +112,8 @@
         min-width: 147px;
         height: 52px;
         // замедляет эффект
-            transition: 0.5s;
+        transition: 0.5s;
+
 
         &:hover {
             box-shadow: 0 0 20px red;
@@ -73,4 +123,92 @@
 
 .activ {
     color: #FFAE2B;
+}
+
+
+/* Icon 1 */
+// !вместо id #nav-icon1 ставим имя своего класса
+// !обязательно прописываем название класса в файле js
+
+.header-navbar__btn {
+    position: relative;
+    // *уменьшаем физические габариты гамбургерга, уменьшаем в два раза (делим размеры на 2)
+    // width: 60px;
+
+    width: 30px;
+    // height: 45px;
+    height: 22.5px;
+    // margin: 50px auto;
+    // margin: 25px auto;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+    // гамбургер отображается менше 768px
+
+    @include lg-min {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        left: 0;
+        // *уменьшаем физические размеры шрифта, уменьшаем в два раза (делим размеры на 2)
+
+        display: block;
+
+        width: 100%;
+        // height: 9px;
+        height: 5px;
+
+        transition: 0.25s ease-in-out;
+        transform: rotate(0deg);
+
+        opacity: 1;
+        // border-radius: 9px;
+        border-radius: 3px;
+        background: #FFAE2B;
+
+        // можно поменять цвета
+        &:nth-child(1) {
+            top: 0;
+
+            // background: #a4a14a;
+        }
+
+        &:nth-child(2) {
+            // top: 18px;
+            top: 9px;
+
+            // background: #ffc500;
+        }
+
+        &:nth-child(3) {
+            // top: 36px;
+            top: 18px;
+
+            // background: #ff6336;
+        }
+    }
+
+    &.open span:nth-child(1) {
+        // top: 18px;
+        top: 9px;
+
+        transform: rotate(135deg);
+    }
+
+    &.open span:nth-child(2) {
+        // left: -60px;
+        left: -30px;
+
+        opacity: 0;
+    }
+
+    &.open span:nth-child(3) {
+        // top: 18px;
+        top: 9px;
+
+        transform: rotate(-135deg);
+    }
 }
