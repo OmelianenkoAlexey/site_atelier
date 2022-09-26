@@ -1,8 +1,6 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
-
 .footer-primary {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,6 @@
             font-size: 40px;
         }
 
-
     }
 
     &__description {
@@ -49,10 +46,6 @@
 
     &__content {}
 }
-
-
-
-
 
 .footer-content {
     display: flex;
@@ -74,17 +67,13 @@
         }
     }
 
-
-
     &__title {
         max-width: 420px;
         text-align: center;
         margin-bottom: 20px;
 
-
         &--md {}
     }
-
 
     &__social {
         display: flex;
@@ -98,7 +87,6 @@
                 // увеличивает при наведении
                 transform: scale(1.1);
             }
-
         }
 
         &-picture {
@@ -113,10 +101,5 @@
         }
 
         &-logo {}
-
     }
-
-
-
-
 }
