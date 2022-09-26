@@ -19,6 +19,20 @@
         line-height: 70px;
         text-align: center;
         color: #FFAE2B;
+
+        @include lg {
+            font-size: 50px;
+        }
+
+        @include md {
+            font-size: 45px;
+        }
+
+        @include sm {
+            font-size: 40px;
+        }
+
+
     }
 
     &__description {
@@ -50,6 +64,10 @@
         width: 420px;
         border: 1px solid #4b4136;
 
+        @include sm {
+            width: 325px;
+        }
+
         &--md {
             background-color: #FFAE2B;
             margin-bottom: 30px;
@@ -62,29 +80,35 @@
         max-width: 420px;
         text-align: center;
         margin-bottom: 20px;
-        
+
 
         &--md {}
     }
 
 
-
     &__social {
-display: flex;
-gap: 10px;
+        display: flex;
+        gap: 10px;
 
         &-link {
-            
+            &:hover {
+                background-color: #ffae2b;
+                // тень при наведении
+                box-shadow: 0 0 7px $color-accent-orange;
+                // увеличивает при наведении
+                transform: scale(1.1);
+            }
+
         }
 
         &-picture {
-height: 48px;
+            height: 48px;
             width: 48px;
             border: 1px solid #4b4136;
             display: flex;
-        align-items: center;
+            align-items: center;
             justify-content: center;
-           
+
 
         }
 

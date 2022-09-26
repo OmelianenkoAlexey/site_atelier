@@ -17,11 +17,21 @@
         font-weight: 400;
         font-size: 60px;
         line-height: 70px;
-        /* identical to box height, or 117% */
-
         text-align: center;
-
         color: #FFAE2B;
+        
+@include lg {
+        font-size: 50px;
+    }
+
+    @include md {
+        font-size: 45px;
+    }
+
+    @include sm {
+        font-size: 40px;
+    }
+
     }
 
     &__description {

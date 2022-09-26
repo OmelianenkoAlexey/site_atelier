@@ -3,11 +3,12 @@
 
 .instagram {
     background-color: $color-bg-primary;
-padding-bottom: 120px;
+    padding-bottom: 120px;
+
     &-container {
         display: flex;
         flex-wrap: wrap;
-            justify-content: center;
+        justify-content: center;
     }
 
     &-item {}
@@ -26,10 +27,10 @@ padding-bottom: 120px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-            align-items: center;
+        align-items: center;
         flex-basis: 300px;
-            flex-grow: 1;
-            position: relative;
+        flex-grow: 1;
+        position: relative;
 
         &__picture {}
 
@@ -42,41 +43,46 @@ padding-bottom: 120px;
 
         &__title {
             margin-bottom: 70px;
-                      font-family: 'Old Standard TT';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 40px;
-                line-height: 50px;
-                color: #FFAE2B;
-               
+            font-family: 'Old Standard TT';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 50px;
+            color: #FFAE2B;
+
+            @include sm {
+                z-index: 1;
+            }
+
+
         }
 
         &__action {
-             position: relative;
-                z-index: 1;
-             
+            position: relative;
+            z-index: 1;
+
         }
 
         &__button {
-   cursor: pointer;
-padding: 10px 20px;
+            cursor: pointer;
+            padding: 10px 20px;
             width: 122px;
-                height: 50px;
+            height: 50px;
             background: #FFAE2B;
-                border-radius: 0px;
-
+            border-radius: 0px;
             font-family: 'Old Standard TT';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 22px;
-                text-align: center;
-                text-transform: uppercase;
-            
-                color: #181511;
-                &:hover {
-                    box-shadow: 0 0 7px red;
-                }
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #181511;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 7px red;
+            }
         }
     }
 

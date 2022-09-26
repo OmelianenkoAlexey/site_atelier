@@ -58,7 +58,7 @@
   //   justify-content: space-around;
   display: grid;
   justify-items: center;
-  gap: 20px;
+  gap: 20px 0;
   grid-template-columns: repeat(3, 1fr);
 
   @include xl {
@@ -76,6 +76,14 @@
   display: block;
   // flex-basis: 300px;
   // flex-grow: 1;
+
+  &:hover {
+      background-color: #ffae2b;
+        // тень при наведении
+        box-shadow: 0 0 7px $color-accent-orange;
+        // увеличивает при наведении
+        transform: scale(1.1);
+  }
 
 }
 
@@ -106,4 +114,6 @@
   order: -1;
 }
 
-.template-box__item-image {}
+.template-box__item-image {
+  width: 100%;
+}
