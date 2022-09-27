@@ -448,7 +448,9 @@ a {
 }
 
 .header-content__title {
-  max-width: 869px;
+  max-width: 889px;
+  padding-right: 10px;
+  padding-left: 10px;
 
   text-align: center;
   letter-spacing: 1px;
