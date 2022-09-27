@@ -235,6 +235,8 @@ a {
   -ms-flex-direction: column;
       flex-direction: column;
 
+  min-height: 100vh;
+
   border: none;
   background-color: #181511;
 }
@@ -423,7 +425,7 @@ a {
   display: block;
 
   width: 100%;
-  height: 600px;
+  height: 80vh;
 
   -o-object-fit: cover;
      object-fit: cover;
