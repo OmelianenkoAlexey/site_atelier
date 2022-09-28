@@ -76,6 +76,8 @@
   display: block;
   // flex-basis: 300px;
   // flex-grow: 1;
+   // transition: 1s;
+  transition: ease-in-out 1s;
 
   &:hover {
       background-color: #ffae2b;

@@ -82,6 +82,7 @@
         gap: 10px;
 
         &-link {
+            transition: ease-in-out 1s;
             &:hover {
                 background-color: #ffae2b;
                 // тень при наведении

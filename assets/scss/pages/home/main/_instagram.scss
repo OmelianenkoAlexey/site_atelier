@@ -17,9 +17,13 @@
 
     &-image {
         transition: 0.5s;
+        filter: saturate(0);
+        transition: ease-in-out 1s;
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
+            filter: saturate(1);
+
         }
     }
 
